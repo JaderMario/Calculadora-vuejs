@@ -16,7 +16,7 @@
 
 </template>
 
-<script>
+<script type="text/javascript">
 export default {
     name: "CalculadoraBasica",
     data:()=>{
@@ -41,7 +41,11 @@ export default {
         },
 
         divide(){
-            this.respuesta = parseInt(this.n1) / parseInt(this.n2); 
+            if (parseInt(this.n2) != 0) {
+                this.respuesta = parseInt(this.n1) / parseInt(this.n2); 
+            } else {
+                this.respuesta = document.write("No se puede dividir por cero");
+            }
         }
 
     }
