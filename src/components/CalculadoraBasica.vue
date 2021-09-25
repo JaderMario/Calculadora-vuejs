@@ -66,7 +66,7 @@ export default {
             respuesta: "", 
             rules: [
                 value => !!value || 'Requerido.',
-                value => (value && value.length >= 3) || 'Min 3 caracteres',
+                value => (value && value.length >= 1) || 'Min 1 caracteres',
             ],           
         };
     },
@@ -87,7 +87,7 @@ export default {
             if (parseInt(this.n2) != 0) {
                 this.respuesta = parseInt(this.n1) / parseInt(this.n2); 
             } else {
-                this.respuesta = document.write("No se puede dividir por cero");
+                this.respuesta = window.alert("No se puede dividir por cero");
             }
         }
 
