@@ -16,7 +16,7 @@
 
 </template>
 
-<script type="text/javascript">
+<script type="text/javascript">    // Se agrega este type a la etiqueta script para poder imprimir texto en pantalla
 export default {
     name: "CalculadoraBasica",
     data:()=>{
