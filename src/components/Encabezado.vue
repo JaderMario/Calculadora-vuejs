@@ -1,8 +1,7 @@
 <template>
-
     <v-row>
       <v-col>
-        <p>
+        <p class="text-justify">                                   <!--párrafo justificado-->
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nisi
           optio quia numquam quos molestias! Cumque laborum non eligendi magnam
           obcaecati! At velit, amet dolor culpa quo id distinctio unde.
@@ -13,8 +12,7 @@
           amet exercitationem molestias veritatis.
         </p>
       </v-col>
-    </v-row>
-  
+    </v-row> 
 </template>
 
 <script>

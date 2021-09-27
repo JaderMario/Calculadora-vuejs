@@ -27,8 +27,8 @@
         </v-row>
         <br>
 
-        <v-row>
-            <v-col class="text-center">
+        <v-row class="text-center">                    <!--centramos todos los botones de la fila-->
+            <v-col>                                    <!--Colocamos cada botón dentro de una colummna-->
                 <v-btn                                           
                     color="primary"
                     elevation="11"
@@ -36,7 +36,8 @@
                     small
                     @click="suma()"
                 >Sumar</v-btn>                             <!--botón Sumar en Beautify-->
-
+            </v-col>
+            <v-col>
                 <v-btn                                           
                     color="primary"
                     elevation="11"
@@ -44,7 +45,8 @@
                     small
                     @click="resta()"
                 >Restar</v-btn> 
-
+            </v-col>
+            <v-col>
                 <v-btn                                           
                     color="primary"
                     elevation="11"
@@ -52,7 +54,8 @@
                     small
                     @click="multiplica()"
                 >Muliplicar</v-btn> 
-
+            </v-col>
+            <v-col>
                 <v-btn                                           
                     color="primary"
                     elevation="11"
@@ -64,8 +67,16 @@
         </v-row>
         
         <br>
-        <span>{{ respuesta }}</span>          <!--muestra respuesta interpolado-->
-
+        <v-row class="text-center">                      <!--centra la columna-->
+            <v-col>
+                <v-banner 
+                    color="cyan accent-1"                               
+                    elevation="13"
+                    single-line>
+                    <span>{{ respuesta }}</span>          <!--muestra respuesta interpolado-->
+                </v-banner>
+            </v-col>
+        </v-row>
     </v-container>
 
 </template>
