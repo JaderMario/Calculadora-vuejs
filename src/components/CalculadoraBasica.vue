@@ -118,7 +118,7 @@ export default {
             if (parseInt(this.n2) != 0) {
                 this.respuesta = parseInt(this.n1) / parseInt(this.n2); 
             } else {
-                this.respuesta = window.alert("No se puede dividir por cero");
+                this.respuesta = window.alert(" ¡Error! No se puede dividir por cero");
             }
         }
 
