@@ -5,10 +5,20 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    personajes: []
   },
   mutations: {
+    setPersonajes(state, payload) {
+      state.personajes = payload;
+    }
   },
   actions: {
+    async getPersonajes({commit}) {
+      const peticion = await fetch('https://futuramaapi.herokuapp.com/api/v2/characters');    // API de la página futurama
+      const data = await peticion.json();
+      console.log(data);
+      commit ('setPersonajes', data);
+    }
   },
   modules: {
   }

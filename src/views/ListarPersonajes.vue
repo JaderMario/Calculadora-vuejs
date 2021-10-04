@@ -3,16 +3,17 @@
 </template>
 
 <script>
-//Importamos Personajes.vue a la vista LiatarPersonajes,       ../ remplaza a scr 
+//Importamos Personajes.vue a la vista ListarPersonajes,       ../ remplaza a scr
 import Personajes from "../components/Personajes.vue";
 
 export default {
-    name:"ListarPersonajes",
-    components: {
-        Personajes,
-    },
-}
+  name: "ListarPersonajes",
+  components: {
+    Personajes,
+  },
+};
 </script>
+
 
 <style>
 
