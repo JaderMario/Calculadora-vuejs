@@ -4,7 +4,7 @@
     <h1>Personajes</h1>
     <ul>
       <li v-for="item in personajes" :key="item.Name">
-        {{item.Name}}
+        Nombre: {{item.Name}} - Edad: {{item.Age}}            <!--Muestra el nombre y la edad-->
       </li>
     </ul>
   </div>
